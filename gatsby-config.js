@@ -28,6 +28,15 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-sanity`,
+      options: {
+        projectId:  `vus71yxg`,
+        dataset: `icon-media`,
+        token: process.env.SANITY_TOKEN,
+        graphqlTag: 'default',
+      }
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
